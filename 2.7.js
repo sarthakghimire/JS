@@ -21,6 +21,9 @@ let cc=String(c);
 let ee=Boolean(e);
 let ff=Boolean(f);
 let gg=Number(f);
+let hh=Number(c);
+let ii=String(c);
+
 d=true;
 console.log("After conversion:");
 console.log(typeof(aa)+" "+ aa);
@@ -30,6 +33,8 @@ console.log(typeof(d)+" "+ d);
 console.log(typeof(ee)+" "+ee);
 console.log(typeof(ff)+" "+ff);
 console.log(typeof(gg)+" "+gg); //Since f has a non number 'a', f can't be converted to a number
+console.log(typeof(hh)+" "+hh);
+console.log(typeof(ii)+" "+ii);
 
 //More type conversions
 console.log("6"/3);
