@@ -36,12 +36,12 @@ const a2=[
     [21,22,23],
     [31,32,33]
     ];
-/*console.log(a2[1][2]);  
+console.log(a2[1][2]);  
 for(i=0;i<=2;i++){
     for(j=0;j<=2;j++){
         console.log(a2[i][j]);
     }
-}*/
+}
 
 //Push Pop operations
 a1.push(35);
