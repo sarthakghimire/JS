@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chameleon</title>
+</head>
+<body>
+    <h1>Color Changing button 👇👇</h1>
+    <div>
+<button id="red" onclick="showColor('red')">Red</button>
+<button id="green" onclick="showColor('green')">Green</button><br>
+<button id="blue" onclick="showColor('blue')">Blue</button>
+<button id="random" onclick="generateColor()">Random</button>
+    </div>
+    <script>
+        const body= document.getElementsByTagName("body")[0];
+    
+        function showColor(name)
+        {
+             body.style.backgroundColor=name;
+        }
+
+        function generateColor()
+        {
+          const red=Math.round(Math.random()*255);
+          const green=Math.round(Math.random()*255);
+          const blue=Math.round(Math.random()*255);
+
+          const color=`rgb(${red},${green},${blue})`;
+          body.style.backgroundColor=color;
+        }
+    </script>
+</body>
+</html>
+
+<style>
+    div{
+        border: 1px solid black;
+        height: 135px;
+        width: 225px;
+    }
+    button{
+        margin: 5px;
+        height: 50px;
+        width: 100px;
+        border-radius:50px;
+        box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    }
+    #red{
+        background-color:red;
+    }
+    #green{
+        background-color:green;
+    }
+    #blue{
+        background-color:blue;
+    }
+    #random{
+        background-color:orange;
+    }
+    button:hover{
+        transform: scale(1.05);
+    }
+</style>
+
