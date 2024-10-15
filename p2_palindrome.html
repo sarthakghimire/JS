@@ -8,15 +8,21 @@
     <script>
         function checkPal(){
             let st=document.getElementById('myText').value;
+            let isPal= true;
+
         for(let i=0;i<st.length/2;i++){   
-        if(st[i]==st[st.length-1-i]){
-        document.getElementById('output').innerHTML="Palindrome";
+        if(st[i]!=st[st.length-1-i]){
+            isPal=false;
+            break;
         }
-        else{
-            document.getElementById('output').innerHTML="Not Palindrome"; 
-        }   
+    }
+        if (isPal) {
+        document.getElementById('output').innerHTML = "Palindrome";
+    } else {
+        document.getElementById('output').innerHTML = "Not Palindrome";
     }
 }
+        
     </script>
 </head>
 <body>
