@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function checkPal(){
+            let st=document.getElementById('myText').value;
+        for(let i=0;i<st.length/2;i++){   
+        if(st[i]==st[st.length-1-i]){
+        document.getElementById('output').innerHTML="Palindrome";
+        }
+        else{
+            document.getElementById('output').innerHTML="Not Palindrome"; 
+        }   
+    }
+}
+    </script>
+</head>
+<body>
+    <h1>Palindrome Checker</h1>
+    <input type="text" id="myText">
+    <button onclick="checkPal()" id="myButton">Check</button>
+    <p id="output"></p>
+</body>
+</html>
